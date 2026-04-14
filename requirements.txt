@@ -1,0 +1,11 @@
+# Core dependencies for web deployment
+litellm
+deepgram-sdk
+python-dotenv
+pydantic
+
+# Web server
+fastapi
+uvicorn[standard]
+python-multipart
+gunicorn

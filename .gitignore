@@ -1,0 +1,53 @@
+# Environment variables
+.env
+.env.local
+
+# Virtual environment
+venv/
+env/
+ENV/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Audio files
+*.wav
+*.mp3
+output.wav
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+
+# Google credentials
+credentials.json
+token.json
+*.json
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Temporary files
+temp/
+tmp/
+*.tmp
+
+# Streamlit
+.streamlit/secrets.toml

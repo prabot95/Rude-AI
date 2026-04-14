@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Rude AI Voice Assistant</title>
+    <meta name="description" content="Talk to the world's rudest AI assistant — if you dare." />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="status-badge">
+            <div class="status-dot">
+                <span class="ping"></span>
+                <span></span>
+            </div>
+            <span class="status-text" id="headerStatus">System Online</span>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-area" id="mainArea">
+        <!-- Mic Button -->
+        <div class="mic-container" id="micContainer">
+            <div class="mic-glow"></div>
+            <div class="mic-ring"></div>
+            <button class="mic-btn" id="micBtn" title="Tap to talk">
+                <div class="inner-ring"></div>
+                <span class="material-icons-round mic-icon" id="micIcon">mic</span>
+                <span class="mic-label" id="micLabel">Tap to Talk</span>
+            </button>
+        </div>
+
+        <!-- State Pill -->
+        <div class="state-pill" id="statePill">Ready</div>
+
+        <!-- Chat Log -->
+        <div class="chat-log" id="chatLog"></div>
+
+        
+
+        <!-- Instructions -->
+        <div class="instructions">
+            Press <span class="kbd">Space</span> to interrupt &middot;
+            Say <strong style="color:var(--text);">&ldquo;Goodbye&rdquo;</strong> to end conversation
+        </div>
+    </main>
+
+    <!-- Waveform Footer -->
+    <div class="waveform-footer" id="waveform"></div>
+
+    <!-- Hidden audio player -->
+    <audio id="audioPlayer" style="display:none;"></audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
